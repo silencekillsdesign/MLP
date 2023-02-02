@@ -22,6 +22,10 @@ pnpm install --shamefully-hoist
 Start the development server on http://localhost:3000
 
 ```bash
+# yarn
+yarn dev -o
+
+# npm
 npm run dev
 ```
 
@@ -30,6 +34,11 @@ npm run dev
 Build the application for production:
 
 ```bash
+# yarn
+yarn nuxt build
+
+# npm
+npm run dev
 npm run build
 ```
 
