@@ -5,18 +5,16 @@
       flat
       density="compact"
     >
-      <v-avatar
-        size="32"
-      ><v-icon icon="mdi-vuetify" size="large" color="blue"></v-icon></v-avatar>
+      <v-avatar size="32">
+        <v-icon icon="mdi-vuetify" size="large" color="blue"></v-icon>
+      </v-avatar>
 
       <v-spacer></v-spacer>
 
-      <v-tabs right color="grey-darken-2">
-      
+      <v-tabs right color="grey-darken-2">      
         <v-tab v-for="link in links" :key="link">
-          {{ link }}
+          {{ link.title }}
         </v-tab>
-
       </v-tabs>
 
     </v-app-bar>
@@ -27,10 +25,23 @@
   export default {
     data: () => ({
       links: [
-        'Home',
-        'Gallery',
-        'Profile',
-        'Updates',
+        {
+          title: "Home",
+          url: "/"
+        },
+        {
+          title: "Gallery",
+          url: "/gallery"
+        },
+        {
+          title: "About",
+          url: "/"
+        },
+        {
+          title: "Contact",
+          url: "/"
+        },
+        
       ],
     }),
   }
