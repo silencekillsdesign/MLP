@@ -1,36 +1,50 @@
 <template>
-    <v-footer class="d-flex flex-column">
-      <div class="bg-teal d-flex w-100 align-center px-4">
-        <strong>Get connected with us on social networks!</strong>
-  
-        <v-spacer></v-spacer>
-  
+  <v-footer class="d-flex flex-column mt-8 position-sticky">
+    <div class="bg-blue-accent-4 d-flex w-100 align-center px-12 py-4">
+      <strong>Help make Threes even stronger.</strong>
+    </div>
+
+    <v-row no-gutters align="center" class="d-flex px-12 py-3 bg-black text-center w-100">
+      <v-col>
+        <p class="skd-logo-font">
+          &copy; {{ new Date().getFullYear() }} — Silence<strong>Kills</strong>Design
+        </p>
+      </v-col>
+      <v-spacer></v-spacer>
+      <v-col>
+
+        <!-- todo: add tooltips and urls to these -->
         <v-btn
           v-for="icon in icons"
           :key="icon"
           class="mx-4"
           :icon="icon"
           variant="plain"
-          size="small"
-        ></v-btn>
-      </div>
-  
-      <div class="px-4 py-2 bg-black text-center w-100">
-        {{ new Date().getFullYear() }} — <strong>Vuetify</strong>
-      </div>
-    </v-footer>
-  </template>
+          size="small"></v-btn>
+      </v-col>
+    </v-row>
+  </v-footer>
+</template>
 
+<style lang="scss">
+.v-footer {
+  padding: 0;
+}
+
+.skd-logo-font {
+  font-family: Play;
+}
+</style>
   
-  <script>
-  export default {
-    data: () => ({
-      icons: [
-        'mdi-facebook',
-        'mdi-twitter',
-        'mdi-linkedin',
-        'mdi-instagram',
-      ],
-    }),
-  }
+<script>
+export default {
+  data: () => ({
+    icons: [
+      'mdi-facebook',
+      'mdi-twitter',
+      'mdi-linkedin',
+      'mdi-instagram',
+    ],
+  }),
+}
 </script>

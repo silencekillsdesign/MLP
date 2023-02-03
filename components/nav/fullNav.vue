@@ -1,7 +1,7 @@
 <template>
     <v-app-bar
-      class="px-8"
-      color="white"
+      class="px-12"
+      color="blue-accent-4"
       flat
       density="compact"
     >
@@ -11,15 +11,23 @@
 
       <v-spacer></v-spacer>
 
-      <v-tabs right color="grey-darken-2">      
-        <v-tab v-for="link in links" :key="link">
+      <v-tabs right >      
+        <v-tab color="white" v-for="link in links" :key="link" :to=link.url>
           {{ link.title }}
+          <!-- <nuxt-link :to=link.url>{{ link.title }}</nuxt-link> -->
         </v-tab>
       </v-tabs>
 
     </v-app-bar>
 
 </template>
+
+<style lang="scss">
+h2 {
+  font-family: "Poppins";
+  font-weight: 900;
+}
+</style>
 
 <script>
   export default {
@@ -35,11 +43,11 @@
         },
         {
           title: "About",
-          url: "/"
+          url: "/about"
         },
         {
           title: "Contact",
-          url: "/"
+          url: "/contact"
         },
         
       ],

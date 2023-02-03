@@ -1,12 +1,10 @@
 <template>
-  <v-app>
-    <nav-full-nav></nav-full-nav>
-    <v-main class="bg-grey-lighten-2">
-      <v-container>
-       <galleries-cards-gallery></galleries-cards-gallery>
-       <galleries-thumbs-gallery></galleries-thumbs-gallery>
-      </v-container>
-    </v-main>
+  <v-app fluid class="ma-0 pa-0">    
+    <v-container fluid class="ma-0 pa-0 fill-height">
+      <nav-full-nav></nav-full-nav>
+      <nuxt-page></nuxt-page>      
+    </v-container>
+    <sections-footer></sections-footer>
   </v-app>
 </template>
 
