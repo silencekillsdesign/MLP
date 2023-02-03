@@ -38,7 +38,6 @@ Build the application for production:
 yarn nuxt build
 
 # npm
-npm run dev
 npm run build
 ```
 
