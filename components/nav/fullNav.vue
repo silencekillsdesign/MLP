@@ -5,9 +5,11 @@
       flat
       density="compact"
     >
-      <v-avatar size="32">
-        <v-icon icon="mdi-vuetify" size="large" color="blue"></v-icon>
-      </v-avatar>
+      <v-app-bar-title size="32">
+        <v-icon icon="mdi-vuetify" size="large" color="white"></v-icon>
+        <v-icon icon="mdi-nuxt" size="large" color="white"></v-icon>
+        <v-icon icon="mdi-vuejs" size="large" color="white"></v-icon>
+      </v-app-bar-title>
 
       <v-spacer></v-spacer>
 
