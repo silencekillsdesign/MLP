@@ -1,5 +1,5 @@
 <template name="gallery">
-  <v-main class="bg-grey-lighten-2">
+  <v-main>
     <v-container >
       <galleries-cards-gallery></galleries-cards-gallery>
       <galleries-thumbs-gallery></galleries-thumbs-gallery>
