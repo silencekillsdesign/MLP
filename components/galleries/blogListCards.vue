@@ -3,7 +3,7 @@
     <h2 class="text-h3 text-center my-12">Cards Gallery w/ Aspect Ratios</h2>
     <v-container class="px-md-12">
       <v-row>
-        <v-col v-for="card in cards" :key="i">
+        <v-col v-for="card in cards" :key="card">
           <v-card  class="">
             <v-img :src="card.img" height="200" cover>
               <v-container align="center" class="fill-height my-auto">

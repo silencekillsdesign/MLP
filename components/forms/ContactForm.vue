@@ -53,8 +53,8 @@
   export default {
     data: () => ({
       valid: false,
-      firstname: '',
-      lastname: '',
+      name: '',
+      role: '',
       nameRules: [
         value => {
           if (value) return true
@@ -62,9 +62,9 @@
           return 'Name is requred.'
         },
         value => {
-          if (value?.length <= 10) return true
+          if (value?.length <= 30) return true
 
-          return 'Name must be less than 10 characters.'
+          return 'Name must be less than 30 characters.'
         },
       ],
       email: '',
