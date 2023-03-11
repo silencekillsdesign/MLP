@@ -62,9 +62,8 @@ export default {
       {
         title: "Contact",
         url: "/contact"
-      },
-
-    ],
-  }),
+      }
+    ]
+  })
 }
 </script>

@@ -13,14 +13,17 @@
       <v-spacer></v-spacer>
       <v-col>
 
-        <!-- todo: add tooltips and urls to these -->
+        <!-- todo: add tooltips to these -->
         <v-btn
-          v-for="icon in icons"
-          :key="icon"
+          v-for="social in socials"
+          :key="social"
           class="mx-4"
-          :icon="icon"
+          :icon="social.icon"
+          :href="social.url"
+          target="_blank"
           variant="plain"
-          size="small"></v-btn>
+          size="small"
+          ></v-btn>
       </v-col>
     </v-row>
   </v-footer>
@@ -39,11 +42,23 @@
 <script>
 export default {
   data: () => ({
-    icons: [
-      'mdi-facebook',
-      'mdi-twitter',
-      'mdi-linkedin',
-      'mdi-instagram',
+    socials: [      
+      {
+        url: "https://www.twitter.com/s1lencek1lls",
+        icon: 'mdi-twitter'
+      },
+      {
+        url: "https://www.linkedin.com/in/cjwilliamsworks",
+        icon: 'mdi-linkedin'
+      },
+      {
+        url: "https://github.com/silencekillsdesign",
+        icon: 'mdi-github'
+      },
+      {
+        url: "https://www.facebook.com/SilenceKillsDesign",
+        icon: 'mdi-facebook'
+      }
     ],
   }),
 }

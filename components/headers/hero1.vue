@@ -2,8 +2,9 @@
     <v-container fluid class="ma-0 pa-0 fill align-center justify-center">
     <v-parallax
         class="hero1 fill-height align-center mt-sm-0 mt-lg-n16"
-        src="https://cdn.vuetifyjs.com/images/backgrounds/vbanner.jpg">
-            <v-row justify="center">
+        src="https://cdn.vuetifyjs.com/images/backgrounds/vbanner.jpg"
+        lazy-src="https://cdn.vuetifyjs.com/images/backgrounds/vbanner.jpg">
+            <v-row justify="center" align="center" class="mt-n16">
             <v-card theme="dark" class="bg-transparent pa-10" width="600" >
             <v-row>
                 <v-col align="center">
@@ -40,11 +41,16 @@
     h4 {
         font-weight: 300;
     }
-
-    h4 {}
 }
 
 .test {
     border: 1px solid red;
 }
 </style>
+
+<script>
+import { useTheme } from 'vuetify'
+
+export default {
+}
+</script>
