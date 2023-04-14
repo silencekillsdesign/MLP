@@ -4,7 +4,7 @@
       <v-list-item prepend-icon="mdi-view-dashboard" :value="link.url" v-for="link in links" :key="link" :to=link.url>{{ link.title }}</v-list-item>
     </v-list>
   </v-navigation-drawer>
-  <v-app-bar class="px-lg-12 px-sm-2" position-sticky color="blue-accent-4" >
+  <v-app-bar density="compact" position-sticky color="blue-accent-4" class="mb-12">
     <v-app-bar-title >
       <v-btn variant="text" to="/">
       <v-icon icon="mdi-vuetify" size="large" color="white"></v-icon>
@@ -58,6 +58,10 @@ export default {
       {
         title: "About",
         url: "/about"
+      },
+      {
+        title: "Blog",
+        url: "/blog"
       },
       {
         title: "Contact",

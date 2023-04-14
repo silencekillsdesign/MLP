@@ -28,9 +28,9 @@
                         cols="12"
                         md="4">
                         <v-select
-                            v-model="role"
+                            v-model="roles"
                             label="What's Your Role'?"
-                            :items="['Developer', 'Desinger', 'Blogger', 'Shaq', 'Other']">
+                            :items="items">{{ item }}
                         </v-select>
                     </v-col>
                 </v-row>
@@ -54,7 +54,7 @@
     data: () => ({
       valid: false,
       name: '',
-      role: '',
+      items: ['Developer', 'Desinger', 'Blogger', 'Shaq', 'Other'],
       nameRules: [
         value => {
           if (value) return true

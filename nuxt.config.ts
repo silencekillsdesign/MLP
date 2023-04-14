@@ -4,7 +4,8 @@
 export default defineNuxtConfig({
   css: ["vuetify/lib/styles/main.sass", "@mdi/font/css/materialdesignicons.min.css"],
   modules: [
-    "@nuxtjs/google-fonts"
+    "@nuxtjs/google-fonts",
+    "nuxt-svgo"
   ],
   typescript: { shim: false },
   build: {
@@ -19,7 +20,8 @@ export default defineNuxtConfig({
   googleFonts: {
     families: {
       Inter: [100,200,300,400,500,600,700,800,900],
-      Play: [400,700]
+      Play: [400,700],
+      Anton: [400]
     },
     download: true,
     useStylesheet: true,
