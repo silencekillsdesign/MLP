@@ -5,14 +5,14 @@
         src="https://cdn.vuetifyjs.com/images/backgrounds/vbanner.jpg"
         lazy-src="https://cdn.vuetifyjs.com/images/backgrounds/vbanner.jpg">
             <v-row justify="center" align="center">
-            <v-card theme="dark" class="bg-transparent pa-10" width="600" >
+            <v-card theme="dark" class="bg-transparent pa-10 text-white mt-md-n16" width="600" >
             <v-row>
                 <v-col align="center">
                     <h4 class="text-uppercase text-overline">Welcome to Threes</h4>
                 </v-col >
             </v-row>
             <v-row justify="center" class="my-12 text-h1">
-                <v-icon icon="mdi-vuetify"></v-icon>
+                <v-icon icon="mdi-vuetify" color="white" class="text-h1 text-md-h1"></v-icon>
                 <v-icon icon="mdi-nuxt"></v-icon>
                 <v-icon icon="mdi-vuejs"></v-icon>
             </v-row>
