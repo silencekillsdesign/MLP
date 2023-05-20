@@ -4,7 +4,7 @@
             height="700"
             cover
             class="hero1 align-center"
-            src="_nuxt/img/tim-mossholder-V12FTtOFhRk-unsplash.png">
+            src="~/assets/img/tim-mossholder-V12FTtOFhRk-unsplash.png">
             <v-container>
                 <v-row justify="center" align="center" class="">
                     <v-col cols="xs-12 md-5" class="hero-text">
