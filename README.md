@@ -1,4 +1,4 @@
-# How to use Vuetify with Nuxt 3
+# One way to use Vuetify with Nuxt 3
 
 Tutorial - https://codybontecou.com/how-to-use-vuetify-with-nuxt-3.html
 
