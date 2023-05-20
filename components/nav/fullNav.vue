@@ -51,17 +51,13 @@ export default {
         icon: "mdi-home"
       },
       {
-        title: "Gallery",
-        url: "/gallery",
+        title: "Services",
+        url: "/services",
         icon: "mdi-home"
       },
       {
         title: "About",
         url: "/about"
-      },
-      {
-        title: "Blog",
-        url: "/blog"
       },
       {
         title: "Contact",

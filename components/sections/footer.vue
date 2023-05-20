@@ -1,7 +1,7 @@
 <template>
   <v-footer class="d-flex flex-column position-sticky">
     <div class="bg-blue-accent-4 d-flex w-100 align-center px-12 py-4">
-      <strong>Help make Threes even stronger. #CONTRIBULATE</strong>
+      <strong>This will be the prefooter CTA</strong>
     </div>
 
     <v-row no-gutters align="center" class="d-flex px-12 py-3 bg-black text-center w-100">
