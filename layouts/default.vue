@@ -5,5 +5,6 @@
             <slot></slot>
         </v-container>
     </v-main>
-    <sections-footer></sections-footer>    
+    <SectionsPreFooter />
+    <SectionsFooter />
 </template>

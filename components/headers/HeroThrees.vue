@@ -1,10 +1,10 @@
 <template>
     <v-container fluid class="mx-0 mt-n10 px-0 align-center justify-center fill-height overlay">
-        <v-parallax
+        <v-img
             height="700"
             cover
             class="hero1 align-center"
-            src="~/assets/img/tim-mossholder-V12FTtOFhRk-unsplash.png">
+            src="~/public/img/courtroom.png">
             <v-container>
                 <v-row justify="center" align="center" class="">
                     <v-col cols="xs-12 md-5" class="hero-text">
@@ -56,7 +56,7 @@
                     </v-col>
                 </v-row>
             </v-container>
-        </v-parallax>
+        </v-img>
     </v-container>
 </template>
 
