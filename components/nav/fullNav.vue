@@ -6,11 +6,8 @@
   </v-navigation-drawer>
   <v-app-bar density="compact" position-sticky color="blue-accent-4" class="mb-12">
     <v-app-bar-title >
-      <v-btn variant="text" to="/">
-      <v-icon icon="mdi-vuetify" size="large" color="white"></v-icon>
-      <v-icon icon="mdi-nuxt" size="large" color="white"></v-icon>
-      <v-icon icon="mdi-vuejs" size="large" color="white"></v-icon>
-      </v-btn>
+      <!-- <v-btn variant="text" to="/">McKenzie Law</v-btn> -->
+      <v-img class="ml-n4 ml-md-n12" height="30px" src="/logo.png"></v-img>
     </v-app-bar-title>
     <v-spacer></v-spacer>
 

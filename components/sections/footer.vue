@@ -1,30 +1,23 @@
 <template>
-  <v-footer class="d-flex flex-column position-sticky">
-    <div class="bg-blue-accent-4 d-flex w-100 align-center px-12 py-4">
-      <strong>This will be the prefooter CTA</strong>
-    </div>
-
-    <v-row no-gutters align="center" class="d-flex px-12 py-3 bg-black text-center w-100">
+  <v-footer class="position-sticky">    
+    <v-row no-gutters align="center" class="px-12 py-5  bg-black w-100 justify-space-between">
       <v-col>
         <p class="skd-logo-font">
-          &copy; {{ new Date().getFullYear() }} — Silence<strong>Kills</strong>Design
+          &copy; {{ new Date().getFullYear() }} — McKenzie Law. 
         </p>
       </v-col>
       <v-spacer></v-spacer>
-      <v-col>
-
-        <!-- todo: add tooltips to these -->
-        <v-btn
-          v-for="social in socials"
-          :key="social"
+      <v-col class="justify-right">
+        <v-row class="justify-right">
+        <v-btn          
           class="mx-4"
-          :icon="social.icon"
-          :href="social.url"
           target="_blank"
+          icon="mdi-email"
+          href="mailto:wes@mckenzielaw.com"
           variant="plain"
-          size="small"
-          ></v-btn>
-      </v-col>
+          >wes@mckenzielaw.com</v-btn>
+        </v-row>
+      </v-col>      
     </v-row>
   </v-footer>
 </template>
@@ -38,28 +31,3 @@
   font-family: Play;
 }
 </style>
-  
-<script>
-export default {
-  data: () => ({
-    socials: [      
-      {
-        url: "https://www.twitter.com/s1lencek1lls",
-        icon: 'mdi-twitter'
-      },
-      {
-        url: "https://www.linkedin.com/in/cjwilliamsworks",
-        icon: 'mdi-linkedin'
-      },
-      {
-        url: "https://github.com/silencekillsdesign",
-        icon: 'mdi-github'
-      },
-      {
-        url: "https://www.facebook.com/SilenceKillsDesign",
-        icon: 'mdi-facebook'
-      }
-    ],
-  }),
-}
-</script>

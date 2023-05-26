@@ -8,7 +8,7 @@
             </v-col>
             <v-col align-self="center" class="pa-md-12">
                 <v-row no-gutters>
-                    <v-col cols="6" class="pa-2" v-for="service in services" :key="service">
+                    <v-col cols="12" md="6" class="pa-2" v-for="service in services" :key="service">
                         <v-card class="service-card" prepend-icon="mdi-scale-balance" theme="dark" hover ripple>
                             <v-card-title>
                                 {{ service.title }}

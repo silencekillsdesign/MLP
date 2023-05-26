@@ -1,17 +1,18 @@
 <template>
     <v-container fluid class="mx-0 mt-n10 px-0 align-center justify-center fill-height overlay">
-        <v-img
+        <v-parallax
             height="700"
             cover
             class="hero1 align-center"
-            src="~/public/img/courtroom.png">
+            src="/img/courtroom.png">
             <v-container>
                 <v-row justify="center" align="center" class="">
                     <v-col cols="xs-12 md-5" class="hero-text">
                         <p class="text-overline">McKenzie Law, PLLC.</p>
                         <h2 class="mb-3">we're here to defend you</h2>
-                        <p>Our investigators and experts are not afraid to fight aggressively for your rights in court.</p>
-                    </v-col>
+                        <p class="mb-5">Our investigators and experts are not afraid to fight aggressively for your rights in court.</p>
+                        <v-btn prepend-icon="mdi-arrow-down-circle" variant="text" @click="$vuetify.goTo(AboutBlock, easeInOutCubic)">Know your rights</v-btn> 
+                   </v-col>
                     <v-col offset="md-2" class="d-none d-md-block">
                         <form @submit.prevent="submit">
                             <v-text-field
@@ -56,7 +57,7 @@
                     </v-col>
                 </v-row>
             </v-container>
-        </v-img>
+        </v-parallax>
     </v-container>
 </template>
 
@@ -82,6 +83,7 @@
 <script>
   import { ref } from 'vue'
   import { useField, useForm } from 'vee-validate'
+import AboutBlock from '../sections/AboutBlock.vue'
 
   export default {
     setup () {
