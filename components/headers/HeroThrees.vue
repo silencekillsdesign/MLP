@@ -9,7 +9,7 @@
                 <v-row justify="center" align="center" class="">
                     <v-col cols="xs-12 md-5" class="hero-text">
                         <p class="text-overline">McKenzie Law, PLLC.</p>
-                        <h2 class="mb-3">we're here to defend you</h2>
+                        <h2 class="mb-3">We're here to defend you.</h2>
                         <p class="mb-5">Our investigators and experts are not afraid to fight aggressively for your rights in court.</p>
                         <v-btn prepend-icon="mdi-arrow-down-circle" variant="text" @click="$vuetify.goTo(AboutBlock, easeInOutCubic)">Know your rights</v-btn> 
                    </v-col>

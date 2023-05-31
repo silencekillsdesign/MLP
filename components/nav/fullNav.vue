@@ -1,23 +1,27 @@
 <template>
-  <v-navigation-drawer v-model="drawer" temporary>
-    <v-list density="compact" nav>
-      <v-list-item prepend-icon="mdi-view-dashboard" :value="link.url" v-for="link in links" :key="link" :to=link.url>{{ link.title }}</v-list-item>
-    </v-list>
-  </v-navigation-drawer>
-  <v-app-bar density="compact" position-sticky color="blue-accent-4" class="mb-12">
-    <v-app-bar-title >
-      <!-- <v-btn variant="text" to="/">McKenzie Law</v-btn> -->
-      <v-img class="ml-n4 ml-md-n12" height="30px" src="/logo.png"></v-img>
-    </v-app-bar-title>
-    <v-spacer></v-spacer>
+  <div>
+    <v-navigation-drawer v-model="drawer" temporary>
+      <v-list density="compact" nav>
+        <v-list-item prepend-icon="mdi-view-dashboard" v-for="link in links" :key="link" :href="link.url">{{ link.title }}</v-list-item>
+      </v-list>
+    </v-navigation-drawer>
+    <v-app-bar density="compact" position-sticky color="blue-accent-4" class="mb-12">
+      <v-app-bar-title>
+        <nuxt-link to="/">
+          <!-- <v-btn variant="text" to="/">McKenzie Law</v-btn> -->
+          <v-img class="ml-n4 ml-md-n12" height="30px" src="/logo.png"></v-img>
+        </nuxt-link>
+      </v-app-bar-title>
+      <v-spacer></v-spacer>
 
-    <v-btn @click="toggleTheme" icon="mdi-theme-light-dark" class="mr-3"></v-btn>
-    <v-tabs right class="d-none d-lg-block">
-      <v-tab color="white" v-for="link in links" :key="link" :to=link.url> {{ link.title }} </v-tab>      
-    </v-tabs>
+      <v-btn @click="toggleTheme" icon="mdi-theme-light-dark" class="mr-3"></v-btn>
+      <v-tabs right class="d-none d-lg-block">
+        <v-tab color="white" v-for="link in links" :key="link" :href="link.url"> {{ link.title }} </v-tab>
+      </v-tabs>
 
-    <v-app-bar-nav-icon class="d-lg-none" variant="text" @click.stop="drawer = !drawer"></v-app-bar-nav-icon>    
-  </v-app-bar>
+      <v-app-bar-nav-icon class="d-lg-none" variant="text" @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
+    </v-app-bar>
+  </div>
 </template>
 
 <style lang="scss">
@@ -31,7 +35,7 @@ h2 {
 import { useTheme } from 'vuetify'
 
 export default {
-  setup () {
+  setup() {
     const theme = useTheme()
 
     return {
@@ -49,16 +53,16 @@ export default {
       },
       {
         title: "Services",
-        url: "/services",
+        url: "services",
         icon: "mdi-home"
       },
       {
         title: "About",
-        url: "/about"
+        url: "about"
       },
       {
         title: "Contact",
-        url: "/contact"
+        url: "contact"
       }
     ]
   })

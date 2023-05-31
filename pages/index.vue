@@ -5,7 +5,7 @@
             <SectionsServicesHome />
             <SectionsAboutBlock />
             <SectionsSplitTwo />
-            <SectionsHomeTestimonials />            
+            <SectionsHomeTestimonials />
         </v-container>
     </v-main>
 </template>

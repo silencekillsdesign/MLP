@@ -1,16 +1,17 @@
 // To Do: Google Fonts, Analytics, Theme, svg support, nuxt content
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
-export default defineNuxtConfig({  
+export default defineNuxtConfig({ 
+  pages: true,
   css: ["vuetify/lib/styles/main.sass", "@mdi/font/css/materialdesignicons.min.css"],
   modules: [
     "@nuxtjs/google-fonts",
-    "nuxt-svgo"
+    "nuxt-svgo",
+    "@nuxtjs/html-validator"
   ],
   typescript: { shim: false },
   build: {
     transpile: ["vuetify"],
-    
   },
   vite: {
     ssr: { noExternal: ["vuetify"] },
